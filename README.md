@@ -1,27 +1,21 @@
-# ScrapingFront
+<body>
+    <h1>Proyecto Angular - Web Scraping de Ofertas</h1>
+    <p>Este proyecto es una aplicación web desarrollada en <strong>Angular</strong> que consume una API creada con <strong>Spring Boot</strong> para realizar <em>scraping web</em> de las ofertas del día en Mercado Libre. La interfaz está diseñada con <strong>Bootstrap</strong>, garantizando un diseño moderno y responsive.</p>
+    <h2>🎯 Funcionalidades</h2>
+    <ul>
+        <li>🔍 <strong>Buscar productos:</strong> Permite buscar productos por nombre.</li>
+        <li>💰 <strong>Filtrar por precio:</strong> Los usuarios pueden establecer rangos de precios para encontrar ofertas específicas.</li>
+        <li>🛍️ <strong>Visualizar ofertas:</strong> Muestra un listado de todas las ofertas disponibles.</li>
+    </ul>
+    <h2>📱 Diseño Responsive</h2>
+    <p>La aplicación está optimizada para dispositivos móviles, tabletas y computadoras de escritorio gracias al uso de <strong>Bootstrap</strong>, asegurando una experiencia de usuario fluida en cualquier dispositivo.</p>
+    <h2>⚙️ Tecnologías Utilizadas</h2>
+    <ul>
+        <li>🚀 <strong>Spring Boot:</strong> Framework backend para construir y exponer la API.</li>
+        <li>🅰️ <strong>Angular:</strong> Framework frontend para crear una interfaz interactiva y funcional.</li>
+        <li>🎨 <strong>Bootstrap:</strong> Framework CSS para diseño moderno y responsive.</li>
+        <li>📄 <strong>JSoup:</strong> Biblioteca Java utilizada para realizar scraping web.</li>
+    </ul>
+</body>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
