@@ -1,0 +1,25 @@
+<div class="filter-container" style="padding: 10px; background-color: #fff;">
+  <div class="mb-3">
+    <label for="precioMin" class="form-label">Precio mínimo</label>
+    <input
+      type="number"
+      id="precioMin"
+      [(ngModel)]="precioMin"
+      name="precioMin"
+      class="form-control"
+      placeholder="Ej: 1000"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="precioMax" class="form-label">Precio máximo</label>
+    <input
+      type="number"
+      id="precioMax"
+      [(ngModel)]="precioMax"
+      name="precioMax"
+      class="form-control"
+      placeholder="Ej: 5000"
+    />
+  </div>
+  <button type="button" class="btn btn-primary" (click)="aplicarFiltro()">Aplicar Filtro</button>
+</div>

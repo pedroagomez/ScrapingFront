@@ -1,0 +1,33 @@
+<div class="container mt-4">
+  <h1 class="text-center mb-4">Ofertas del Día</h1>
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let oferta of ofertas">
+      <div class="card h-100">
+        <img [src]="oferta.imageUrl" class="card-img-top" alt="{{ oferta.title }}" />
+        <div class="card-body">
+          <h5 class="card-title">{{ oferta.title }}</h5>
+          <p class="card-text">¡Gran oferta disponible ahora!</p>
+          <h6 class="text-muted text-decoration-line-through" *ngIf="oferta.precioAnterior">
+            {{ oferta.precioAnterior }}
+          </h6>
+          <h6 class="text-success fw-bold">{{ oferta.precioActual }}</h6>
+        </div>
+        <div class="card-footer text-center">
+          <a [href]="oferta.link" target="_blank" class="btn btn-primary">Ver Detalles</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <nav *ngIf="!searchQuery">
+    <ul class="pagination justify-content-center">
+      <li class="page-item" [class.disabled]="currentPage === 1">
+        <button class="page-link" (click)="cambiarPagina(currentPage - 1)">Anterior</button>
+      </li>
+      <li class="page-item">
+        <button class="page-link" (click)="cambiarPagina(currentPage + 1)">Siguiente</button>
+      </li>
+    </ul>
+  </nav>
+</div>

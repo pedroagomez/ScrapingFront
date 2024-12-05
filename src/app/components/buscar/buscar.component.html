@@ -1,0 +1,12 @@
+<form class="d-flex">
+  <input
+    class="form-control me-2"
+    type="search"
+    placeholder="Buscar ofertas"
+    [(ngModel)]="searchQuery"
+    name="searchQuery"
+    aria-label="Buscar"
+    (input)="onBuscar()"
+  />
+  <button class="btn btn-outline-success" type="button" (click)="onBuscar()">Buscar</button>
+</form>
